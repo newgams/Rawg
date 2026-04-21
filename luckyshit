@@ -48,11 +48,27 @@ local Window = Rayfield:CreateWindow({
 
 local MainTab = Window:CreateTab("Main", "star")
 
-MainTab:CreateLabel("Update 🥳🎉🎉 4/10/26")
-MainTab:CreateLabel("+ Premium")
-MainTab:CreateLabel("+ Chat tags are not global including semo tags (only shows when both are using script!)")
-MainTab:CreateLabel("+ Script officially has a small delay to prevent github lost")
-MainTab:CreateLabel("+ Some hot changes")
+MainTab:CreateLabel("Sorry guys the GitHub was deleted so we had to create a new one so we acted quick, thanks.")
+MainTab:CreateLabel("Users will be rewarded with free premium!")
+MainTab:CreateLabel("Join our discord server to talk with the owner")
+MainTab:CreateLabel("Or add suscet for more info.")
+MainTab:CreateLabel("Thanks")
+MainTab:CreateLabel("https://discord.gg/Vxr9rpqwEe")
+MainTab:CreateLabel("Suscet, premium soon..")
+
+MainTab:CreateDivider()
+
+MainTab:CreateButton({
+    Name = "Copy Discord",
+    Callback = function()
+        setclipboard("https://discord.gg/Vxr9rpqwEe")
+        Rayfield:Notify({
+            Title = "Copied!",
+            Content = "Notify me for suggestions",
+            Duration = 3,
+        })
+    end,
+})
 
 MainTab:CreateDivider()
 
